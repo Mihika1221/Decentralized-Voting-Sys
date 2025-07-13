@@ -1,0 +1,95 @@
+/* Modern + Techy Voting App */
+
+body {
+  margin: 0;
+  padding: 2rem;
+  font-family: 'Segoe UI', sans-serif;
+  background: radial-gradient(circle at top left, #1a1a1a, #111);
+  color: #e0e0e0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.main-heading {
+  font-size: 3.5rem;
+  color: #00ffe1;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin-bottom: 1rem;
+  text-shadow: 0 0 10px #00ffe1;
+}
+
+.sub-heading {
+  font-size: 1.3rem;
+  margin: 1rem 0 2rem;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.candidate-card {
+  backdrop-filter: blur(12px);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(0, 255, 255, 0.2);
+  border-radius: 16px;
+  padding: 1.5rem;
+  margin: 1rem auto;
+  max-width: 300px;
+  width: 100%;
+  box-shadow: 0 8px 20px rgba(0, 255, 255, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.candidate-card:hover {
+  transform: scale(1.02);
+}
+
+.candidate-card h3 {
+  font-size: 1.5rem;
+  color: #00e1ff;
+  margin-bottom: 0.5rem;
+}
+
+button {
+  padding: 0.6rem 1.4rem;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #00ffc3, #00bfff);
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 0.8rem;
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  background: linear-gradient(90deg, #00f7ff, #00ffe1);
+  transform: scale(1.05);
+  box-shadow: 0 0 10px #00ffe1;
+}
+
+.winner {
+  font-size: 1.5rem;
+  color: #00ffe1;
+  font-weight: bold;
+  margin-top: 2rem;
+  animation: pulse 1.5s infinite alternate;
+}
+
+@keyframes pulse {
+  from { opacity: 0.8; transform: scale(1); }
+  to { opacity: 1; transform: scale(1.05); }
+}
+
+.signature {
+  position: fixed;
+  bottom: 12px;
+  left: 16px;
+  font-size: 0.85rem;
+  font-family: 'Courier New', monospace;
+  color: #666;
+  opacity: 0.6;
+}
+
